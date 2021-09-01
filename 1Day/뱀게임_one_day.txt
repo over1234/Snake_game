@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <Windows.h>
+
+// map = (30*2) * (27*2)
+void map_screen()
+{
+
+	printf("▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩                                                        ▩\n");
+	printf("▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩\n");
+}
+
+void setCursorPos(int x, int y) // 콘솔 좌표 위치 지정
+{
+	COORD pos = { x,y };
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+}
+
+int main()
+{
+	map_screen();
+	setCursorPos(28, 13);
+	printf("△");
+	setCursorPos(28, 14);
+	printf("§");
+	setCursorPos(28, 15);
+	printf("§");
+	return 0;
+}
